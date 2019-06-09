@@ -1,15 +1,15 @@
-import boto3
-
 from Describe import Describe
 
 
-class DescribeLambda(Describe):
+class DescribeEc2(Describe):
 
     def __init__(self):
-        super().__init__('lambda')
+        super().__init__("ec2")
+        self.instances = []
 
     def describe(self):
-        super().describe()
+        response = self.client.describe_instances()
+        self.instances = response["Reservations"]
 
     def extract_contents(self):
         """
