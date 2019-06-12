@@ -1,4 +1,4 @@
-from Describe import Describe
+from src.Describe import Describe
 
 
 class DescribeEc2(Describe):

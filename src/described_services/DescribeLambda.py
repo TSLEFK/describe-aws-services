@@ -1,6 +1,6 @@
 import boto3
 
-from Describe import Describe
+from src.Describe import Describe
 
 
 class DescribeLambda(Describe):

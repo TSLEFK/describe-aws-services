@@ -3,8 +3,8 @@ import sys
 import json
 import logging
 
-from described_services.DescribeEc2 import DescribeEc2
-from described_services.DescribeLambda import DescribeLambda
+from src.described_services.DescribeEc2 import DescribeEc2
+from src.described_services.DescribeLambda import DescribeLambda
 
 log_formatter = "%(asctime)s [%(levelname)s] " \
                 "(l.%(lineno)d) <%(funcName)s> %(message)s"
